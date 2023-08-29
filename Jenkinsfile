@@ -1,7 +1,7 @@
 pipeline{
     agent any
     parameters{
-        choice(name: PRODUCT, choice: choices['_Please select the product', 'X1help', 'X2help', 'X3help'], description: '')
+        choice(name: PRODUCT,  choices: ['_Please select the product', 'X1help', 'X2help', 'X3help'], description: '')
     }
     stages {
         stage('Verify product'){
